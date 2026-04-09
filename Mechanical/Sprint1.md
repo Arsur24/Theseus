@@ -63,11 +63,20 @@ Both of the examples above showcase the strength of dead axles. They are a compo
 **Strain Relief**
 
 While looking through techniques on relieving cable strain, I came across a design on Wikipedia. Strain relief was provided to the cable by having it turn a corner. We implemented a similar design onto our robot, with "posts" for the cables to string around. This design prevents any pulling on key connections. 
-
-![image-20260302163522796](./assets/image-20260302163522796.png)
-
-<img src="./assets/image-20260302163709955.png" alt="image-20260302163709955" width="50%">
-<h5 align="center">Cable strain relief design</h5>
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <img src="./assets/image-20260302163522796.png" width="90%">
+    </td>
+    <td width="50%" align="center">
+      <img src="./assets/image-20260302163709955.png" width="90%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><h5>Industry Reference</h5></td>
+    <td align="center"><h5>Sketchn</h5></td>
+  </tr>
+</table>
 
 ## Ideation:
 
@@ -197,7 +206,7 @@ The suspension reformatted chassis and suspension wedge was very successful. The
 
 The strain relief posts did exactly what they were needed to do. As you can see, the lengths that I have set here were correct, and there is no further strain on the motor. However, the posts are a little bit short. This wasn't considered when I was designing the part, so the quantity of cables passing through will be noted for future designs.
 
-<img src="./assets/image-20260318123411368.png" alt="image-20260318123411368" width="50%">
+<img src="./assets/image-20260318123411368.png" alt="image-20260318123411368" width="25%">
 
 # Conclusion
 
