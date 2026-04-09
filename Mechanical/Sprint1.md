@@ -11,11 +11,11 @@ The goal for this sprint is a part of a major goal, which is redesigning a V2 bo
 
 The current chassis has the motors mounted *above* the base layer, which results in space inefficiency. Less space is able to be used for the mounting of the MUX and the stepper motor, which results in cabling difficulties. Additionally, the battery was meant to go in the space in the center, but is blocked by cables.
 
-![image-20260116150503143](C:/Users/Arthur.xiao/AppData/Roaming/Typora/typora-user-images/image-20260116150503143.png)
+![image-20260116150503143](./assets/image-20260116150503143.png)
 
 Another major issue is the disorganized cabling of our previous robots. In the design process of these previous iterations, cabling strategies were ignored while designing the robot. This needs to be fixed for our newer version, making strategic cabling decisions to avoid clutter. 
 
-<img src="./assets/image-20260318121227141.png" alt="image-20260318121227141" style="zoom:50%;" />
+<img src="./assets/image-20260318121227141.png" alt="image-20260318121227141" width="50%">
 
 
 ## Research:
@@ -24,26 +24,40 @@ Another major issue is the disorganized cabling of our previous robots. In the d
 
 At RoboCup Americas 2025, we met S3RS team. They had a suspension mechanism where their suspension shaft was suspended by two panels, with a dead axle shaft in between. Their design was simple yet effective, with the only necessary parts to support the suspension being 2 bearings, and a shaft. 
 
-<img src="./assets/image-20260130113628871.png" alt="image-20260130113628871" style="zoom: 50%;" />
-$$
-\text{S3R5 Team Robot}
-$$
-<img src="./assets/image-20260130115658660.png" alt="image-20260130115658660" style="zoom:50%;" />
-$$
-\text{S3R5 Team design illustration}
-$$
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <img src="./assets/image-20260130113628871.png" width="90%">
+    </td>
+    <td width="50%" align="center">
+      <img src="./assets/image-20260130115658660.png" width="90%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><h5>S3R5 Team Robot</h5></td>
+    <td align="center"><h5>S3R5 Team design illustration</h5></td>
+  </tr>
+</table>
+
 **Dead Axle**
 
 While researching the best way to mount the suspension, I considered a strategy that I've seen widely used in robotics competitions, such as FRC and FTC. The mechanism is a dead axle. In a dead axle, there is a fixed axle that doesn't rotate, while the rotating object is mounted with bearings, freely moving on the axle. There were many key advantages to this, but the most important factor was that a dead axle prevents **Torsional Stress** from a rotating axle. In my application, this is ideal, since I wanted to created a strong shaft that wouldn't break under constant use.
 
-<img src="./assets/image-20260318113853084.png" alt="image-20260318113853084" style="zoom:50%;" />
-$$
-\text{FRC Dead Axle}
-$$
-<img src="./assets/image-20260318114948566.png" alt="image-20260318114948566" style="zoom:50%;" />
-$$
-\text{FTC Dead Axle}
-$$
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <img src="./assets/image-20260318113853084.png" width="90%">
+    </td>
+    <td width="50%" align="center">
+      <img src="./assets/image-20260318114948566.png" width="90%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><h5>FRC Dead Axle</h5></td>
+    <td align="center"><h5>FTC Dead Axle</h5></td>
+  </tr>
+</table>
+
 Both of the examples above showcase the strength of dead axles. They are a component that I'm familiar with using, with a perfect fit to my application. 
 
 **Strain Relief**
@@ -52,19 +66,16 @@ While looking through techniques on relieving cable strain, I came across a desi
 
 ![image-20260302163522796](./assets/image-20260302163522796.png)
 
-<img src="./assets/image-20260302163709955.png" alt="image-20260302163709955" style="zoom:50%;" />
-$$
-\text{Cable strain relief design}
-$$
+<img src="./assets/image-20260302163709955.png" alt="image-20260302163709955" width="50%">
+<h5 align="center">Cable strain relief design</h5>
+
 ## Ideation:
 
 **Chassis structure**
 
 Design the chassis in such a way where the motors go *under* the bottom layer, leaving more space for mux, cabling, and the battery.
 
-
-
-![image-20260116150708385](C:/Users/Arthur.xiao/AppData/Roaming/Typora/typora-user-images/image-20260116150708385.png)
+![image-20260116150708385](./assets/image-20260116150708385.png)
 
 - In this chassis design motors will be mounted underneath
 - This creates a space between first and second layer, which is perfect for mounting a dropper
@@ -73,7 +84,7 @@ Design the chassis in such a way where the motors go *under* the bottom layer, l
 
 Reformat the position of the suspension constraint wedge to save space underneath the robot. If this isn't done, the changes to the motor positions are pointless. 
 
-<img src="./assets/image-20260318122039886.png" alt="image-20260318122039886" style="zoom:67%;" />
+<img src="./assets/image-20260318122039886.png" alt="image-20260318122039886" width="67%">
 
 - There is significant space saved from moving the wedge to the top
 - Wheels can decrease their diameter, shrinking the sizing of the robot. 
@@ -82,7 +93,7 @@ Reformat the position of the suspension constraint wedge to save space underneat
 
 The goal of this is to make a post that is structurally rigid, and gives adequate space for all cables to fit through. 
 
-<img src="./assets/image-20260318122659214.png" alt="image-20260318122659214" style="zoom:50%;" />
+<img src="./assets/image-20260318122659214.png" alt="image-20260318122659214" width="50%">
 
 - Caps are added to posts to prevent cables from slipping out
 - Offsets are created, so no extra strain is created on cables, only relief
@@ -112,8 +123,6 @@ Today's Goal:
 ![image-20260116152021848](./assets/image-20260116152021848.png)
 
 #### Suspension Front Profile:
-
-
 
 ![image-20260116153358267](./assets/image-20260116153358267.png)
 
@@ -163,26 +172,32 @@ Today's Goal:
 - 1mm countersink to make placing 2mm washers easier
 - Strain relief posts to prevent any pulling on motor connection
 
-<img src="./assets/image-20260128135703558.png" alt="image-20260128135703558" style="zoom:67%;" />
+<img src="./assets/image-20260128135703558.png" alt="image-20260128135703558" width="67%">
 
-<img src="./assets/image-20260128140345779.png" alt="image-20260128140345779" style="zoom:67%;" />
-$$
-\text{Cabling guides for back motors}
-$$
-<img src="./assets/image-20260128140425926.png" alt="image-20260128140425926" style="zoom:50%;" />
-$$
-\text{Cabling guides for front motors}
-$$
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <img src="./assets/image-20260128140345779.png" width="90%">
+    </td>
+    <td width="50%" align="center">
+      <img src="./assets/image-20260128140425926.png" width="70%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><h5>Cabling guides for back motors</h5></td>
+    <td align="center"><h5>Cabling guides for front motors</h5></td>
+  </tr>
+</table>
 
 ## Finished Design/Critique
 
 The suspension reformatted chassis and suspension wedge was very successful. There is lots of space beneath the chassis, to provide ground clearance of obstacles. The repositioning of the wedge makes it fit seamlessly with the whole design.
 
-<img src="./assets/image-20260318123306843.png" alt="image-20260318123306843" style="zoom: 67%;" />
+<img src="./assets/image-20260318123306843.png" alt="image-20260318123306843" width="67%">
 
 The strain relief posts did exactly what they were needed to do. As you can see, the lengths that I have set here were correct, and there is no further strain on the motor. However, the posts are a little bit short. This wasn't considered when I was designing the part, so the quantity of cables passing through will be noted for future designs.
 
-<img src="./assets/image-20260318123411368.png" alt="image-20260318123411368" style="zoom:50%;" />
+<img src="./assets/image-20260318123411368.png" alt="image-20260318123411368" width="50%">
 
 # Conclusion
 
@@ -195,5 +210,4 @@ The cabling has been significantly improved, with minimal strain on the motors. 
 - Create a dropper design to fit with this current design 
 - Add second layer, with cabling features. 
 - Create distance sensor mounts
-- Design wheel casting molds. 
-
+- Design wheel casting molds.
